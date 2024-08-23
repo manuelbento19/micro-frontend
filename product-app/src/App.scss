@@ -1,0 +1,73 @@
+.app {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    > header {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        h2{
+            font-size: 2rem;
+            font-weight: bold;
+            color: #383838;
+        }
+        p{
+            max-width: 600px;
+            font-size: .85rem;
+            color: #555;
+        }
+    }
+
+    > section {
+        flex: 1;
+        padding: 2rem 0 0 0;
+        
+        > header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            padding: 20px 0;
+            
+            span{
+                font-size: .95rem;
+                color: #383838;
+                font-weight: 500;
+            }
+            input{
+                max-width: 300px;
+                width: 100%;
+                padding: 9px 6px;
+            }
+        }
+
+        > div {
+            overflow-y: auto;
+            max-height: 75vh;
+
+            @media (max-width: 640px) {
+                grid-template-columns: repeat(1,minmax(0,1fr));
+            }
+        }
+    }
+}
+/*
+
+<div class="max-w-md mx-auto rounded-md overflow-hidden shadow-md hover:shadow-lg">
+ 
+    <div class="p-4">
+        <h3 class="text-lg font-medium mb-2">Product Title</h3>
+        <p class="text-gray-600 text-sm mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae ante
+            vel eros fermentum faucibus sit amet euismod lorem.</p>
+        <div class="flex items-center justify-between">
+            <span class="font-bold text-lg">$19.99</span>
+            <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+        Buy Now
+      </button>
+        </div>
+    </div>
+</div>
+*/
