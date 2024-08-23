@@ -9,7 +9,8 @@ export default defineConfig({
     federation({
       name: "products-app",
       remotes: {
-        "product-components": "http://localhost:4173/assets/remoteEntry.js"
+        "product-components": "http://localhost:4173/assets/remoteEntry.js",
+        "product-app-footer": "http://localhost:4174/assets/remoteEntry.js",
       }
     })
   ],
