@@ -7,7 +7,7 @@ type Props = {
 
 export default function ProductList({data}:Props) {
   return (
-    <div>
+    <div className='products'>
         {data?.map(item=>(
         <article key={item.id}>
             <img src={item.thumbnail} alt="product image"/>
@@ -16,7 +16,7 @@ export default function ProductList({data}:Props) {
             <p>{item.description}</p>
             <footer>
                 <strong>${item.price}</strong>
-                <button>View details</button>
+                <button>Buy</button>
             </footer>
             </div>
         </article>

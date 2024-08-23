@@ -37,6 +37,26 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                flex-wrap: wrap;
+                
+                span{
+                    font-size: 1.2rem;
+                    color: #333;
+                }
+
+                button {
+                    all: unset;
+                    max-width: 80px;
+                    width: 100%;
+                    display: inline-flex;
+                    place-content: center;
+                    padding: 8px 4px;
+                    border: none;
+                    border-radius: 3px;
+                    background-color: #ff5722;
+                    color: #eee;
+                    font-size: .8rem;
+                }
             }
         }
 
