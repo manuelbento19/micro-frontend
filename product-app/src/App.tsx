@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import './App.scss';
 import { Product } from './types';
-import ProductList from 'product-components/list'
+import ProductList from 'product-components/list';
+import AppFooter from 'product-app-footer';
 
 function App() {
   const [products,setProducts] = useState<Product[]>([]);
@@ -31,6 +32,7 @@ function App() {
           {/** ProductList Components */}
         </div>
       </section>
+      <AppFooter/>
     </main>
   )
 }
