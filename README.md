@@ -1,5 +1,7 @@
 # Micro Frontend - Module Federation
 
+![Preview Image](./preview.png)
+
 Este projeto demonstra uma aplicação de micro frontends onde temos dois aplicativos independentes: **`product-components`** e **`product-app`**. 
 
 - **`product-components`**: Fornece os componentes React reutilizáveis para exibição de produtos.
