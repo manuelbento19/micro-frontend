@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 import './App.scss';
 import { Product } from './types';
+import ProductList from 'product-components/list'
 
 function App() {
-  const [_products,setProducts] = useState<Product[]>([]);
+  const [products,setProducts] = useState<Product[]>([]);
 
   useEffect(()=>{
     fetch('https://dummyjson.com/products')
@@ -23,6 +24,7 @@ function App() {
           <input placeholder='Search...'/>
         </header>
         <div>
+          <ProductList data={products}/>
           {/** ProductList Components */}
         </div>
       </section>
