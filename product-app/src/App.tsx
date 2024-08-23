@@ -5,6 +5,9 @@ import ProductList from 'product-components/list'
 
 function App() {
   const [products,setProducts] = useState<Product[]>([]);
+  const [search,setSearch] = useState(""); 
+
+  const onSearch = (event: React.ChangeEvent<HTMLInputElement>) => setSearch(event.target.value); 
 
   useEffect(()=>{
     fetch('https://dummyjson.com/products')
@@ -21,10 +24,10 @@ function App() {
       <section>
         <header>
           <span>Total: {products?.length}</span>
-          <input placeholder='Search...'/>
+          <input onChange={onSearch} placeholder='Search...'/>
         </header>
         <div>
-          <ProductList data={products}/>
+          <ProductList data={products?.filter(item=>JSON.stringify(item)?.match(search))}/>
           {/** ProductList Components */}
         </div>
       </section>
