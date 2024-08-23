@@ -20,7 +20,7 @@ function App() {
       </header>
       <section>
         <header>
-          <span>Total: {20}</span>
+          <span>Total: {products?.length}</span>
           <input placeholder='Search...'/>
         </header>
         <div>
