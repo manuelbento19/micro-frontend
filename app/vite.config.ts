@@ -7,14 +7,20 @@ export default defineConfig({
   server: {
     port: 3000,
   },
+  preview: {
+    port: 3000
+  },
   plugins: [
     react(),
     federation({
       name: "app",
       remotes: {
-        "react-components": "http://localhost:3001/assets/remoteEntry.js",
-        "vue-components": "http://localhost:3002/assets/remoteEntry.js",
+        "react-components": "http://127.0.0.1:3001/assets/remoteEntry.js",
+        //"vue-components": "http://localhost:3002/assets/remoteEntry.js",
       }
     })
   ],
+  build:{
+    target: "esnext"
+  }
 })

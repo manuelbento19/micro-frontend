@@ -28,8 +28,8 @@ function App() {
           <input onChange={onSearch} placeholder='Search...'/>
         </header>
         <div>
-          <ProductList data={products?.filter(item=>JSON.stringify(item)?.match(search))}/>
-          {/** ProductList Components */}
+          <ProductList data={products?.filter(item=>JSON.stringify(item)?.match(search)) || []}/>
+          {/**  <ProductList data={products?.filter(item=>JSON.stringify(item)?.match(search)) || []}/> */}
         </div>
       </section>
       {/*<AppFooter/>*/}

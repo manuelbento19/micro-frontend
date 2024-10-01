@@ -2,7 +2,7 @@ import './style.scss';
 import { Product } from '../types'
 
 type Props = {
-    data: Product[]
+  data: Product[]
 }
 
 export default function ProductList({data}:Props) {
