@@ -16,7 +16,7 @@ export default defineConfig({
       name: "app",
       remotes: {
         "react-components": "http://127.0.0.1:3001/assets/remoteEntry.js",
-        //"vue-components": "http://localhost:3002/assets/remoteEntry.js",
+        "vue-components": "http://127.0.0.1:3002/assets/remoteEntry.js",
       }
     })
   ],

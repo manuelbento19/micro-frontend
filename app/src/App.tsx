@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.scss';
 import { Product } from './types';
 import ProductList from 'react-components/list';
-//import AppFooter from 'vue-components';
+import AppFooter from './footer';
 
 function App() {
   const [products,setProducts] = useState<Product[]>([]);
@@ -32,7 +32,7 @@ function App() {
           {/**  <ProductList data={products?.filter(item=>JSON.stringify(item)?.match(search)) || []}/> */}
         </div>
       </section>
-      {/*<AppFooter/>*/}
+      <AppFooter/>
     </main>
   )
 }

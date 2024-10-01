@@ -16,12 +16,12 @@ export default defineConfig({
       name: "vue-components",
       filename: "remoteEntry.js",
       exposes: {
-        "./": "./src/components/index.vue"
-      }
+        "./footer": "./src/components/footer.vue"
+      },
+      shared:["vue"]
     })
   ],
   build: {
-    modulePreload: true,
     target: "esnext",
     minify: false,
     cssCodeSplit: false
