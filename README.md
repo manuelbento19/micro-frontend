@@ -57,12 +57,12 @@ Para iniciar o ambiente, você precisa rodar o **`react-components`**, o **`app`
 Em um novo terminal, **`vue-components`**:
    ```bash
    cd vue-components
-   npm run dev
+   npm run preview
    ```
 Em um novo terminal, **`app`**:
    ```bash
    cd app
-   npm run dev
+   npm run preview
    ```
 
 ### Acessar a Aplicação
