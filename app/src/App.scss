@@ -53,6 +53,13 @@
             }
         }
     }
+    #vue-root{
+        width: 100%;
+        display: flex;
+    }
+    > footer {
+        background: red;
+    }
 }
 /*
 
