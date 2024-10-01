@@ -2,10 +2,11 @@
 
 ![Preview Image](./preview.png)
 
-Este projeto demonstra uma aplicação de micro frontends onde temos dois aplicativos independentes: **`product-components`** e **`product-app`**. 
+Este projeto demonstra uma aplicação de micro frontends onde temos três aplicativos independentes: **`product-components`** e **`product-app`**. 
 
 - **`product-components`**: Fornece os componentes React reutilizáveis para exibição de produtos.
 - **`product-app`**: Utiliza os componentes do `product-components` para mostrar uma lista de produtos na tela.
+- **`product-app-footer`**: footer desenvolvido com Vue
 
 ## Estrutura do Projeto
 
@@ -13,6 +14,7 @@ Este projeto demonstra uma aplicação de micro frontends onde temos dois aplica
 /micro-frontend-app
   ├── /product-components
   ├── /product-app        
+  ├── /product-app-app        
   ├── package.json        
   └── README.md 
 ```
@@ -20,30 +22,32 @@ Este projeto demonstra uma aplicação de micro frontends onde temos dois aplica
 ## Instalação
 
 ### Clonar o Repositório
-
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/manuelbento19/micro-frontend.git
-   cd micro-frontend
-   ```
+```bash
+git clone https://github.com/manuelbento19/micro-frontend.git
+cd micro-frontend
+```
 
 ### Instalar Dependências
 
-2. Navegue até o diretório de **`product-components`** e instale as dependências:
-   ```bash
-   cd product-components
-   npm install
-   ```
+Navegue até o diretório de **`product-components`** e instale as dependências:
+```bash
+cd product-components
+npm install
+```
 
-3. Navegue até o diretório de **`product-app`** e instale as dependências:
-   ```bash
-   cd ../product-app
-   npm install
-   ```
-
+Navegue até o diretório de **`product-app`** e instale as dependências:
+```bash
+cd ../product-app
+npm install
+```
+Navegue até o diretório de **`product-app-footer`** e instale as dependências:
+```bash
+cd ../product-app-footer
+npm install
+```
 ## Excecutar
 
-Para iniciar o ambiente, você precisa rodar o **`product-components`** e o **`product-app`** em paralelo.
+Para iniciar o ambiente, você precisa rodar o **`product-components`**, o **`product-app`** e o **`product-app-footer`** em paralelo.
 
 **`product-components`**:
    ```bash
@@ -51,16 +55,21 @@ Para iniciar o ambiente, você precisa rodar o **`product-components`** e o **`p
    npm run preview
    ```
 
-2. Em um novo terminal, **`product-app`**:
+Em um novo terminal, **`product-app`**:
    ```bash
    cd product-app
    npm run dev
    ```
-
+Em um novo terminal, **`product-app-footer`**:
+   ```bash
+   cd product-app-footer
+   npm run dev
+   ```
 ### Acessar a Aplicação
 
-- **`product-app`** estará disponível em [http://localhost:3000](http://localhost:3000). 
-- **`product-components`** estará disponível em [http://localhost:4173](http://localhost:4173).
+- **`product-app`** estará disponível em [http://localhost:3000](http://localhost:3000) 
+- **`product-components`** estará disponível em [http://localhost:3001](http://localhost:3001)
+- **`product-components-footer`** estará disponível em [http://localhost:30021](http://localhost:3002)
 
 ## Contribuição
 

@@ -1,10 +1,6 @@
 {
   "name": "micro-frontend",
   "version": "0.1.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "micro-frontend",
     "module-federation",
@@ -12,7 +8,10 @@
     "vite",
     "vitest"
   ],
-  "author": "Manuel Bento",
-  "license": "ISC",
-  "description": ""
+  "author": {
+    "email": "manuelbentomb.223@hotmail.com",
+    "name": "Manuel Bento"
+  },
+  "license": "MIT",
+  "description": "Este projeto demonstra uma aplicação de micro frontends onde temos três aplicativos independentes."
 }
